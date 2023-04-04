@@ -1,0 +1,57 @@
+    깃 - 작업이력 추적, 관리하는 프로그램
+
+    I. 로컬 ==> 원격 저장소 보내기 PART
+    
+    0)  Git 설치
+          git config --global user.email "계정명@도메인"
+          git config --global user.name "계정명"
+
+    1) 작업할 폴더를 git에게 추적, 관리하라고 명령
+          git init
+
+       ※ Github Desktop 사용전에도 미리 init 하기
+
+   2) 작업하면서 기록,추적,관리할 파일/폴더 생김
+        git add  . 또는 파일/형식                vs   Github Desktop [+]
+        git commit -m "작업에 대한 간단설명"
+
+   3) 원격 저장소에 전송(push)
+       - 원격 저장소가 등록되었는지 확인
+                 git remote add origin https://깃헙주소/저장소명.git
+
+       - 커밋이 있는지 확인
+                 git log                ==> 목록이 많으면..q : 목록보기 종료
+
+       - 푸시
+          git push -u origin main or master    
+
+       -u 스위치는 최초 1번만 작성, 이후는 생략
+       ex.     d:\Study_View\Pepsi (main)       : 로컬 저장소
+       그리고, 로컬저장소가 main이면 main으로 푸시
+                        "                 master면 master로 푸시
+         
+
+
+
+      II.  원격 저장소 ==> 로컬 저장소로   가져오는 방법
+
+      1. 작업할 경로 선택    :   D인지 E인지..
+
+      2. Terminal   [Git Bash, Powershell, Command Prompt 중 하나]
+          cd  d:                /   change directory  , 위치 변경
+          mkdir     gitProject        /make directory, 폴더 생성
+          cd gitProject       /    gitProject 내부로 이동
+  
+       3. 원격 저장소를 로컬에 복제(Clone)
+            현재)    d:\gitProject 에서 아래 명령을 수행
+
+           git clone 저장소 주소     [ENTER]  : 저장소명으로 새폴더 생성,복제
+           git clone 저장소 주소 .    [ENTER] : 현재 위치에 그대로 복제
+           git clone --branch 브랜치명 저장소 [.] : 특정 브랜치만 복제1
+
+
+        
+
+
+
+

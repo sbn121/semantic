@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>div 태그</title>
+    <link rel="stylesheet" href="semantic.css">
+</head>
+<body>
+    <h1>div 태그</h1>
+    <p>html 문서에서 영역, 구역을 정의한다.</p>
+    <p>주로 문서의 구역별로 구분하거나, 스타일을 적용할 그룹을 지정할 때 사용한다.</p>
+    <p>각 div 태그는 class나 id 속성을 사용하여 스타일을 적용한다.</p>
+    <p>class 속성은 id보다 자주 사용하고, 반복/재사용이 가능함</p>
+    <p>id속성은 문서 내에서 한번만 사용(다른 문서에서 재사용 가능)</p>
+    <h2>div 태그 사용예시</h2>
+    <div id="wrapper">
+        <div class="header">
+            <div id="logo" class="box">로고</div>
+            <div id="auth" class="box">로그인창</div>
+            <!-- .header>#logo.box{로고}+#auth.box{로그인창}+tap -->
+        </div>
+    </div>
+</body>
+</html>
